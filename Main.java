@@ -8,6 +8,18 @@ public class Main {
                 {18, 22, 30, 25, 6}
         };
         GridPath one = new GridPath(nums);
-        System.out.println(one);
+        //System.out.println(one);
+        System.out.println(one.getNextLocation(0,0));
+        System.out.println(one.getNextLocation(1,3));
+        System.out.println(one.getNextLocation(2,4));
+        System.out.println(one.getNextLocation(4,3));
+        System.out.println(one.sumPath(0,0));
+
+        int[][] secondNums = {
+                {12, 30, 40, 25, 5},
+                {11, 3, 22, 15, 43},
+                {7, 2, 9, 4, 0},
+                {8, 33, 18, 6, 1}
+        };
     }
 }
