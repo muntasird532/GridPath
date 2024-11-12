@@ -25,13 +25,15 @@ public class GridPath {
 
     public int sumPath(int row, int col) {
         int sum = grid[row][col];
-        row = loc.getRow();
-        col = loc.getCol();
-        while(row < grid.length - 1 || col < grid[0].length = 1) {
-            Location loc = getNextLocation(row, col);
+        Location loc = null;
+        while(row < grid.length - 1 || col < grid[0].length - 1) {
+            loc = getNextLocation(row, col);
             row = loc.getRow();
             col = loc.getCol();
         }
+        
+        row = loc.getRow();
+        col = loc.getCol();
         sum += grid[row][col];
         return sum;
     }

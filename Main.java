@@ -21,5 +21,13 @@ public class Main {
                 {7, 2, 9, 4, 0},
                 {8, 33, 18, 6, 1}
         };
+        GridPath second = new GridPath(secondNums);
+        //System.out.print(second);
+
+        System.out.println(second.getNextLocation(0,0));
+        System.out.println(second.getNextLocation(1,3));
+        System.out.println(second.getNextLocation(2,4));
+        System.out.println(second.getNextLocation(3,4));
+        System.out.println(second.sumPath(0,0));
     }
 }
